@@ -1,51 +1,103 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizlilik Politikasi - Burc Rehberi</title>
-<style>
-body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333}
-h1{color:#222;border-bottom:2px solid #ddd;padding-bottom:10px}
-h2{color:#444;margin-top:30px}
-p{margin:10px 0}
-.date{color:#888;font-size:14px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burc Rehberi - Gizlilik Politikasi</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 48px 40px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        h1 { color: #1d1d1f; font-size: 28px; margin-bottom: 8px; }
+        .subtitle { color: #6e6e73; font-size: 14px; margin-bottom: 40px; }
+        h2 { color: #1d1d1f; font-size: 18px; margin-top: 32px; margin-bottom: 12px; }
+        p, li { color: #1d1d1f; font-size: 15px; margin-bottom: 12px; }
+        ul { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        a { color: #0071e3; }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
+            color: #6e6e73;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-<h1>Gizlilik Politikasi - Burc Rehberi</h1>
-<p class="date">Son guncelleme: 22 Subat 2026</p>
+    <div class="container">
+        <h1>Gizlilik Politikasi</h1>
+        <p class="subtitle">Burc Rehberi - KFX Games | Son guncelleme: 18 Mayis 2026</p>
 
-<h2>Giris</h2>
-<p>Burc Rehberi ("biz", "bizim") KFX Games tarafindan gelistirilen bir mobil uygulamadir. Bu Gizlilik Politikasi, uygulamayi kullandiginizda bilgilerinizi nasil topladigimizi, kullandigimizi ve korudugumuzu aciklar.</p>
+        <h2>Giris</h2>
+        <p>Burc Rehberi uygulamasini ("Uygulama") kullandiginiz icin tesekkur ederiz. Bu Gizlilik Politikasi, KFX Games ("Biz", "Bizim") tarafindan gelistirilen Burc Rehberi uygulamasinin kisisel verilerinizi nasil topladigini, kullandigini ve korudugunuzu aciklamaktadir. Uygulamayi kullanarak, bu politikayi kabul etmis sayilirsiniz.</p>
 
-<h2>Topladigimiz Bilgiler</h2>
-<p>Burc Rehberi dogrudan kisisel bilgi toplamaz. Ancak uygulama asagidaki ucuncu taraf hizmetleri kullanir:</p>
-<ul>
-<li><strong>Google AdMob:</strong> Reklam gostermek icin Google AdMob kullaniyoruz. AdMob, reklam kisisellestirme icin cihaz tanimlayicilari, IP adresi ve kullanim verilerini toplayabilir. <a href="https://policies.google.com/privacy">Google Gizlilik Politikasi</a>'na bakiniz.</li>
-<li><strong>Google Fonts:</strong> Yazi tipleri icin Google Fonts kullanilmaktadir.</li>
-</ul>
+        <h2>Topladigimiz Bilgiler</h2>
+        <p>Uygulamamiz asagidaki bilgileri toplayabilir:</p>
+        <ul>
+            <li><strong>Kullanici Tercihleri:</strong> Sectiginiz burc, isim ve ilgi alaniniz gibi bilgiler yalnizca cihazinizda (SharedPreferences) saklanir ve sunucularimiza gonderilmez.</li>
+            <li><strong>Ruh Hali Verileri:</strong> Gunluk ruh hali kayitlariniz yalnizca cihazinizda yerel olarak saklanir.</li>
+            <li><strong>Kullanim Verileri:</strong> Uygulama icindeki etkilesimleriniz (gunluk kullanim sayaclari vb.) cihazinizda saklanir.</li>
+            <li><strong>Fotograflar:</strong> Kahve fali ve el fali ozelliklerini kullandiginizda, sectiginiz fotograflar yalnizca analiz amaciyla Google Gemini API'ye gonderilir ve tarafimizca saklanmaz.</li>
+            <li><strong>Push Bildirim Token'i:</strong> Firebase Cloud Messaging hizmeti araciligiyla bildirim gondermek icin cihaz token'iniz kullanilir.</li>
+        </ul>
 
-<h2>Veri Depolama</h2>
-<p>Uygulama ayarlari ve tercihleri cihazinizda yerel olarak saklanir. Verilerinizi harici sunucularda saklamiyoruz.</p>
+        <h2>Ucuncu Taraf Hizmetleri</h2>
+        <p>Uygulamamiz asagidaki ucuncu taraf hizmetlerini kullanmaktadir:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Reklam gostermek icin kullanilir. AdMob, reklam kisisellestirmesi icin cihaz tanimlayicilari (Advertising ID), IP adresi ve kullanim verilerini toplayabilir. AB/AEA kullanicilari icin onay (consent) ekrani goruntulenir. Daha fazla bilgi: <a href="https://policies.google.com/technologies/ads">Google Reklam Politikalari</a>.</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Push bildirimleri gondermek icin kullanilir. <a href="https://firebase.google.com/support/privacy">Google Firebase Gizlilik Politikasi</a>'na tabidir.</li>
+            <li><strong>Google Gemini API:</strong> Yapay zeka destekli icerik (yorum, fal analizi) uretimi icin kullanilir. Gonderdiginiz metinler ve gorseller yalnizca anlik islem icin kullanilir ve tarafimizca saklanmaz.</li>
+            <li><strong>Google Play Faturalandirma:</strong> Premium uyelik satin alma islemleri Google Play uzerinden gerceklestirilir ve Google'in gizlilik politikasina tabidir.</li>
+        </ul>
 
-<h2>Bildirimler</h2>
-<p>Uygulama, izninizle gunluk burc bildirimleri gonderebilir. Bu bildirimler tamamen cihazinizda yerel olarak zamanlanir.</p>
+        <h2>Veri Saklama ve Guvenlik</h2>
+        <p>Kullanici tercihleriniz ve uygulama verileriniz yalnizca cihazinizda yerel olarak saklanir. Kisisel verilerinizi harici sunucularda saklamiyoruz. Ucuncu taraf hizmetleri (Google AdMob, Firebase, Gemini API) kendi veri saklama politikalarina sahiptir.</p>
+        <p>Premium uyelik durumunuz, yetkisiz erisimi onlemek icin sifrelenmis dogrulama mekanizmalari ile cihazinizda guvenli bir sekilde saklanir.</p>
 
-<h2>Cocuklarin Gizliligi</h2>
-<p>Burc Rehberi 13 yasindan kucuk cocuklara yonelik degildir. Cocuklardan bilerek kisisel bilgi toplamiyoruz.</p>
+        <h2>Cocuklarin Gizliligi</h2>
+        <p>Uygulamamiz 13 yasindan kucuk cocuklara yonelik degildir. Bilerek 13 yasindan kucuk cocuklardan kisisel bilgi toplamiyoruz. Eger bir cocugun bize kisisel bilgi sagladigini ogrenirsek, bu bilgileri derhal silmek icin adimlar atacagiz.</p>
 
-<h2>Ucuncu Taraf Hizmetleri</h2>
-<ul>
-<li>Google AdMob (Reklamcilik)</li>
-<li>Google Play Hizmetleri</li>
-<li>Google Fonts</li>
-</ul>
+        <h2>Reklam Tercihleri ve Onay (Consent)</h2>
+        <p>Uygulamamiz Google AdMob araciligiyla reklam gostermektedir. Premium aboneliginiz varsa reklamlar goruntulenmez. AB/AEA bolgesindeki kullanicilara kisisellestirilmis veya kisisellestirilmemis reklam seciminin yapabilecegi bir onay ekrani (Google User Messaging Platform) gosterilir.</p>
+        <p>Reklam kisisellestirme tercihlerinizi cihazinizin ayarlarindan (Ayarlar &gt; Google &gt; Reklamlar) veya uygulamamizin Ayarlar ekranindan da yonetebilirsiniz.</p>
 
-<h2>Politika Degisiklikleri</h2>
-<p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Degisiklikler bu sayfada yayinlanacaktir.</p>
+        <h2>Egitim Amacli Icerik Uyarisi</h2>
+        <p>Burc Rehberi tarafindan sunulan tum fal, astroloji, tarot, ruya yorumu, kahve fali, el fali ve burc yorumlari yalnizca eglence ve egitim amaclidir. Bilimsel bir gercekligi olmayip kesin tahmin veya tibbi/finansal/hukuki tavsiye olarak degerlendirilmemelidir.</p>
 
-<h2>Iletisim</h2>
-<p>Bu Gizlilik Politikasi hakkinda sorulariniz varsa bize ulasin: oyungelistirici779@gmail.com</p>
+        <h2>Kullanici Haklari</h2>
+        <ul>
+            <li>Uygulamayi kaldirarak tum yerel verilerinizi silebilirsiniz.</li>
+            <li>Bildirim tercihlerinizi uygulama ayarlarindan degistirebilirsiniz.</li>
+            <li>Reklam kisisellestirmesini cihaz ayarlarindan veya consent ekranindan kapatabilirsiniz.</li>
+            <li>Veri talepleriniz icin bizimle iletisime gecebilirsiniz.</li>
+        </ul>
+
+        <h2>Degisiklikler</h2>
+        <p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Degisiklikler uygulama guncellenmesiyle birlikte yururluge girer. Onemli degisikliklerde uygulama icinden bilgilendirileceksiniz.</p>
+
+        <h2>Iletisim</h2>
+        <p>Gizlilik politikamiz hakkinda sorulariniz icin bizimle iletisime gecebilirsiniz:</p>
+        <p><strong>E-posta:</strong> oyungelistirici779@gmail.com<br>
+        <strong>Gelistirici:</strong> KFX Games</p>
+
+        <div class="footer">
+            <p>&copy; 2026 KFX Games - Burc Rehberi. Tum haklari saklidir.</p>
+        </div>
+    </div>
 </body>
 </html>
